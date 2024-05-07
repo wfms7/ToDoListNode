@@ -1,0 +1,60 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(form.css);
+@import url(toDolist.css);
+@import url(icon.css);
+@import url(alert.css);
+
+:root{
+
+    --marrom-claro : #deb069;
+    --marrom-medio: #7f6000;
+    --marrom:#3d2304;
+    --vermelho : #c41026;
+    --marrom-avermelhado :#3d0604;
+    --marrom-sombra: #3d060469;
+    --font:"Ubuntu", sans-serif;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--marron-avermelhado);
+    background-color: var(--marrom-claro);
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+h2{
+   font-size: 26px;
+   font-weight: 500; 
+}
+h3{
+    font-size: 22px;
+}
+
+.button-adicionar__contaier{
+    width: 90%;
+    margin: 0 auto;
+    text-align: end;
+
+}
+
+.button-adicionar{
+    background-color: var(--marrom);
+    color: var(--marrom-claro);
+
+    padding: .5rem;
+    border: var(--marrom-avermelhado) solid 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 5px var(--marrom-sombra);
+}
+
+.button-adicionar:hover{
+    background-color: var(--marrom-claro);
+    color: var(--marrom-avermelhado);
+}

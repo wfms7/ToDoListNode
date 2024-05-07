@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+   
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__titulo-principal">Lista de Tarefas</h1>
+
+
+        </div>
+
+    </header>
+
+    
+
+    <section data-alert>
+
+    </section>
+
+
+    <!-- <div class="alert">
+
+    
+    <div class="alert__container">
+        <div class="alert__titulo">
+            <h2 class="alert__titulo-texto">Sucesso</h2>
+        </div>
+        <div class="alert__mensagem">
+            <h3 class="alert__titulo-texto">Cadastrado com Sucesso</h3>
+        </div>
+
+    </div>
+    </div> -->
+
+    <main>
+
+        <section>
+            <div class="form__container" data-form>
+                <input type="text" id="inputID" name="inputID" hidden class="form__input">
+                <label for="inputtarefa" class="form__label">Tarefa: </label>
+                <input type="text" id="inputtarefa" name="inputtarefa" class="form__input">
+                <label for="inputdata" class="form__label">Data para fazer: </label>
+                <input type="date" id="inputdata" name="inputdata" class="form__input">
+                <div class="form__button-container">
+                    <button class="form__button" id="btnAdd">Adicionar</button>
+                    <button class="form__button" id="btnAtualizar" hidden>Atualizar</button>
+                    <button class="form__button" id="btnFechar">Fechar</button>
+                    
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <section data-tarefas>
+            <div class="button-adicionar__contaier">
+                <button class="button-adicionar" id="addTarefa">Add Tarefas</button>
+            </div>
+
+            <div class="tarefas__container" >
+
+                
+                <div class="tarefas__buttons-all">
+                    <div class="tarefas__linhas">
+                        <span class="tarefas__linhas-total" data-totalTarefas>Total de tarefas: 0</span>
+                    </div>
+                    <button class="button-itens icon-delete" id="btnDeleteAll"></button>
+                   
+                </div>
+
+
+                <div class="tarefa__listas-container">
+                    <ul class="tarefa__listas" data-ul>
+                        <!-- <li class="tarefas__itens">
+                            <label for="" class="tarefa__label">Tarefa:</label>
+                            <span class="tarefa__iten">Limpar Casa</span>
+                            <label for="" class="tarefa__label">Data:</label>
+                            <span class="tarefa__iten">08/02/2024</span>
+                            <label for="" class="tarefa__label">Status:</label>
+                            <span class="tarefa__iten">Para fazer</span>
+                            <div class="tarefas__-container-button-itens">
+                                <button class="button-itens icon-edit"></button>
+                                <button class="button-itens icon-delete"></button>
+                                <button class="button-itens icon-concluido"></button>
+                            </div>
+    
+                        </li>
+
+                        <li class="tarefas__itens">
+                            <label for="" class="tarefa__label">Tarefa:</label>
+                            <span class="tarefa__iten">Limpar Casa</span>
+                            <label for="" class="tarefa__label">Data:</label>
+                            <span class="tarefa__iten">08/02/2024</span>
+                            <label for="" class="tarefa__label">Status:</label>
+                            <span class="tarefa__iten">Para fazer</span>
+                            <div class="tarefas__-container-button-itens">
+                                <button class="button-itens icon-edit"></button>
+                                <button class="button-itens icon-delete"></button>
+                                <button class="button-itens icon-concluido"></button>
+                            </div>
+    
+                        </li>
+
+
+                        <li class="tarefas__itens">
+                            <label for="" class="tarefa__label">Tarefa:</label>
+                            <span class="tarefa__iten">Limpar Casa</span>
+                            <label for="" class="tarefa__label">Data:</label>
+                            <span class="tarefa__iten">08/02/2024</span>
+                            <label for="" class="tarefa__label">Status:</label>
+                            <span class="tarefa__iten">Para fazer</span>
+                            <div class="tarefas__-container-button-itens">
+                                <button class="button-itens icon-edit"></button>
+                                <button class="button-itens icon-delete"></button>
+                                <button class="button-itens icon-concluido"></button>
+                            </div>
+    
+                        </li>
+
+
+                        <li class="tarefas__itens">
+                            <label for="" class="tarefa__label">Tarefa:</label>
+                            <span class="tarefa__iten">Limpar Casa</span>
+                            <label for="" class="tarefa__label">Data:</label>
+                            <span class="tarefa__iten">08/02/2024</span>
+                            <label for="" class="tarefa__label">Status:</label>
+                            <span class="tarefa__iten">Para fazer</span>
+                            <div class="tarefas__-container-button-itens">
+                                <button class="button-itens icon-edit"></button>
+                                <button class="button-itens icon-delete"></button>
+                                <button class="button-itens icon-concluido"></button>
+                            </div>
+    
+                        </li>
+ -->
+
+
+                    </ul>
+                </div>
+
+                
+
+                  
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+</body>
+<script src="./JS/controller/toDoListController.js" type="module"></script>
+</html>

@@ -1,0 +1,22 @@
+.icon-edit{
+    background-image: url(../img/edit-2.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-delete{
+    background-image: url(../img/trash.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+.icon-concluido{
+    background-image: url(../img/check-circle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

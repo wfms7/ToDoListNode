@@ -1,0 +1,93 @@
+.tarefas__container{
+    width: 90%;
+    margin: 1em auto;
+    background-color: var(--marrom);
+    padding-bottom:1rem ;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--marrom-sombra);
+}
+
+.button-itens{
+    border: solid 2px var( --marrom-avermelhado);
+    background-color: var(--marrom-claro);
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px var(--marrom-sombra);
+}
+.button-itens:hover{
+    background-color: var(--marrom-medio);
+    border-color: var(--marrom-medio) ;
+}
+
+.tarefas__buttons-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid var(--marrom-claro);
+
+}
+.tarefas__-container-button-itens{
+    text-align: end;
+    margin: .5rem;
+    grid-column-end: span 2;
+}
+.tarefas__linhas-total{
+    color: var(--marrom-claro);
+}
+
+.tarefa__listas{
+    padding: 1rem;
+}
+.tarefas__linhas{
+    width: 50%;
+}
+
+.tarefas__itens{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    background-color: var(--marrom-claro);
+    gap: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 3px var(--marrom-sombra);
+}
+
+.tarefas__itens-concluido{
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    background-color:var(--marrom-medio);
+    gap: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 3px var(--marrom-sombra);
+}
+
+.tarefa__label{
+    font-weight: 500;
+    
+}
+
+@media screen and (min-width: 820px) {
+   
+
+
+    .tarefa__listas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        
+    }
+
+    .tarefas__itens ,.tarefas__itens-concluido{
+        width: 30%;
+        min-width: 300px;
+        max-width: 500px;
+        
+    }
+
+}
